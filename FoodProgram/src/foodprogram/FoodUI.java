@@ -2,7 +2,6 @@
 package foodprogram;
 
 import java.text.NumberFormat;
-import java.util.Currency;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 
@@ -282,7 +281,7 @@ public class FoodUI extends javax.swing.JFrame {
                                 .addComponent(lblTotalSalesTitle)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(lblTotalSales)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -428,23 +427,19 @@ public class FoodUI extends javax.swing.JFrame {
             lblWaterTotal.setText(Integer.toString(totalWaters));
             
             /* Creats number format to format prices in USD */
-            NumberFormat dollarFormat = NumberFormat.getInstance();
-            Currency dollar = Currency.getInstance(Locale.US);
-            dollarFormat.setCurrency(dollar);
-            
-            System.out.println(dollarFormat.getCurrency());
+            NumberFormat dollarFormat = NumberFormat.getCurrencyInstance(Locale.US);
             
             /* Updates the total price string and the total sales string */
             double price = foodTruckRegister.totalPrice(hotDogs, brats, hamburgers, fries, sodas, waters);
-            dollarFormat.format(price);
-            lblTotalPrice.setText(Double.toString(price));
+            String priceStr = dollarFormat.format(price);
+            lblTotalPrice.setText(priceStr);
             
             double totalSales = foodTruckRegister.totalPrice(totalHotDogs, totalBrats, totalHamburgers, totalFires, totalSodas, totalWaters);
-            dollarFormat.format(totalSales);
-            lblTotalSales.setText(Double.toString(totalSales));
+            String totalSalesStr = dollarFormat.format(totalSales);
+            lblTotalSales.setText(totalSalesStr);
         }
         catch (Error e) {
-            JOptionPane.showMessageDialog(null, "Input Error: Please enter a positive integer into the text fields.", "Input Error", JOptionPane.ERROR);
+            JOptionPane.showMessageDialog(null, "Input Error: Please enter a positive integer into the text fields.", "Input Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnCalculateMouseClicked
 
@@ -466,7 +461,7 @@ public class FoodUI extends javax.swing.JFrame {
      * @param evt Mouse click
      */
     private void btnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseClicked
-        
+        System.exit(0);
     }//GEN-LAST:event_btnExitMouseClicked
 
     /**

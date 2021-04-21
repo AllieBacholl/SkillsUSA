@@ -46,12 +46,18 @@ public class Register {
     public int checkInt(String input) throws Error{
         int checkedInt = -1;
         
-        checkedInt = Integer.parseInt(input);
-        if (checkedInt < 0) {
-            Error negativeNumber = new Error();
-            throw negativeNumber;
+        try {
+            checkedInt = Integer.parseInt(input);
+            
+            if (checkedInt < 0) {
+                Error negativeNumber = new Error();
+                throw negativeNumber;
+            }
         }
-
+        catch (NumberFormatException | Error e) {
+            throw e;
+        }
+        
         return checkedInt;
     }
 }
