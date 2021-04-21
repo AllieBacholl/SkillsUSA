@@ -599,11 +599,15 @@ public class GradeUI extends javax.swing.JFrame {
             mathList.add(mathGrade);
             historyList.add(historyGrade);
         }
-        catch (Error e) {
+        catch (NumberFormatException | Error e) {
             JOptionPane.showMessageDialog(null, "Input Error: Please enter an integer between 0 and 100 (inclusive) into all the text fields.", "Input Error", JOptionPane.ERROR_MESSAGE);
         }
         
-        
+        lblNumberOfScoresArt.setText(Integer.toString(artList.size()));
+        lblNumberOfScoresProg.setText(Integer.toString(progList.size()));
+        lblNumberOfScoresMath.setText(Integer.toString(mathList.size()));
+        lblNumberOfScoresScience.setText(Integer.toString(scienceList.size()));
+        lblNumberOfScoresHistory.setText(Integer.toString(historyList.size()));
     }//GEN-LAST:event_btnCalculateMouseClicked
 
     /**
