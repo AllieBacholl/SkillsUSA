@@ -1,16 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package grade.program;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author albac
+ * Program #2 Grade Program
+ * @author Allie Bacholl
  */
 public class GradeUI extends javax.swing.JFrame {
 
@@ -579,7 +575,7 @@ public class GradeUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     /**
-     * Calculates the grades
+     * Calculates the grades and updates the class tabs
      * @param evt Mouse click
      */
     private void btnCalculateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculateMouseClicked
