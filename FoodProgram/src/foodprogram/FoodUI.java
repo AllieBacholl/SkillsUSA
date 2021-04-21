@@ -443,7 +443,7 @@ public class FoodUI extends javax.swing.JFrame {
             String totalSalesStr = dollarFormat.format(totalSales);
             lblTotalSales.setText(totalSalesStr);
         }
-        catch (Error e) {
+        catch (NumberFormatException | Error e) {
             JOptionPane.showMessageDialog(null, "Input Error: Please enter a positive integer into the text fields.", "Input Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnCalculateMouseClicked
