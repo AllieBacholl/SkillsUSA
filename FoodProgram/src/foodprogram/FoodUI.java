@@ -1,6 +1,11 @@
 
 package foodprogram;
 
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
+import javax.swing.JOptionPane;
+
 /**
  * Program #1 Food Program
  * @author Allie Bacholl
@@ -386,15 +391,61 @@ public class FoodUI extends javax.swing.JFrame {
      * @param evt Mouse Click
      */
     private void btnCalculateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculateMouseClicked
+
         Register foodTruckRegister = new Register();
-        int hotDogs = foodTruckRegister.checkInt(txtFieldBrat.getText());
-        int brats = foodTruckRegister.checkInt(txtFieldFries.getText());
-        int hamburgers = foodTruckRegister.checkInt(txtFieldHamburger.getText());
-        int fries = foodTruckRegister.checkInt(txtFieldHotDog.getText());
-        int soda = foodTruckRegister.checkInt(txtFieldSoda.getText());
-        int water = foodTruckRegister.checkInt(txtFieldWater.getText());
+        try {
+            /* Gets entered values from text fields */
+            int hotDogs = foodTruckRegister.checkInt(txtFieldHotDog.getText());
+            int brats = foodTruckRegister.checkInt(txtFieldBrat.getText());
+            int hamburgers = foodTruckRegister.checkInt(txtFieldHamburger.getText());
+            int fries = foodTruckRegister.checkInt(txtFieldFries.getText());
+            int sodas = foodTruckRegister.checkInt(txtFieldSoda.getText());
+            int waters = foodTruckRegister.checkInt(txtFieldWater.getText());
         
-        
+            /* Adds entered values to total and sets the total string equal to the new total */
+            int totalHotDogs = foodTruckRegister.checkInt(lblHotDogTotal.getText());
+            totalHotDogs += hotDogs;
+            lblHotDogTotal.setText(Integer.toString(totalHotDogs));
+
+            int totalBrats = foodTruckRegister.checkInt(lblBratTotal.getText());
+            totalBrats += brats;
+            lblBratTotal.setText(Integer.toString(totalBrats));
+
+            int totalHamburgers = foodTruckRegister.checkInt(lblHamburgerTotal.getText());
+            totalHamburgers += hamburgers;
+            lblHamburgerTotal.setText(Integer.toString(totalHamburgers));
+
+            int totalFires = foodTruckRegister.checkInt(lblFriesTotal.getText());
+            totalFires += fries;
+            lblFriesTotal.setText(Integer.toString(totalFires));
+
+            int totalSodas = foodTruckRegister.checkInt(lblSodaTotal.getText());
+            totalSodas += sodas;
+            lblSodaTotal.setText(Integer.toString(totalSodas));
+
+            int totalWaters = foodTruckRegister.checkInt(lblWaterTotal.getText());
+            totalWaters += waters;
+            lblWaterTotal.setText(Integer.toString(totalWaters));
+            
+            /* Creats number format to format prices in USD */
+            NumberFormat dollarFormat = NumberFormat.getInstance();
+            Currency dollar = Currency.getInstance(Locale.US);
+            dollarFormat.setCurrency(dollar);
+            
+            System.out.println(dollarFormat.getCurrency());
+            
+            /* Updates the total price string and the total sales string */
+            double price = foodTruckRegister.totalPrice(hotDogs, brats, hamburgers, fries, sodas, waters);
+            dollarFormat.format(price);
+            lblTotalPrice.setText(Double.toString(price));
+            
+            double totalSales = foodTruckRegister.totalPrice(totalHotDogs, totalBrats, totalHamburgers, totalFires, totalSodas, totalWaters);
+            dollarFormat.format(totalSales);
+            lblTotalSales.setText(Double.toString(totalSales));
+        }
+        catch (Error e) {
+            JOptionPane.showMessageDialog(null, "Input Error: Please enter a positive integer into the text fields.", "Input Error", JOptionPane.ERROR);
+        }
     }//GEN-LAST:event_btnCalculateMouseClicked
 
     /**
