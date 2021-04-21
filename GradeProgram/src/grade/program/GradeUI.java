@@ -1,16 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package grade.program;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /**
- *
- * @author albac
+ * Program #2 Grade Program
+ * @author Allie Bacholl
  */
 public class GradeUI extends javax.swing.JFrame {
 
+    /* Lists to store all grades */
+    ArrayList progList = new ArrayList();
+    ArrayList artList = new ArrayList();
+    ArrayList scienceList = new ArrayList();
+    ArrayList mathList = new ArrayList();   
+    ArrayList historyList = new ArrayList();
+    
     /**
      * Creates new form GradeUI
      */
@@ -34,11 +40,11 @@ public class GradeUI extends javax.swing.JFrame {
         lblScienceTitle = new javax.swing.JLabel();
         lblMathTitle = new javax.swing.JLabel();
         lblHistoryTitle = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        txtFieldProg = new javax.swing.JTextField();
+        txtFieldArt = new javax.swing.JTextField();
+        txtFieldScience = new javax.swing.JTextField();
+        txtFieldMath = new javax.swing.JTextField();
+        txtFieldHistory = new javax.swing.JTextField();
         panelProgramming = new javax.swing.JTabbedPane();
         panelArt = new javax.swing.JPanel();
         lblNumberOfScoresTitleArt = new javax.swing.JLabel();
@@ -152,7 +158,7 @@ public class GradeUI extends javax.swing.JFrame {
                     .addComponent(lblHighScoreTitleArt, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblLowScoreTitleArt, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblNumberOfScoresArt)
                     .addComponent(lblCurrentAverageArt)
                     .addComponent(lblHighScoreArt)
@@ -163,19 +169,19 @@ public class GradeUI extends javax.swing.JFrame {
             panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelArtLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblNumberOfScoresTitleArt)
                     .addComponent(lblNumberOfScoresArt))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblCurrentAverageTitleArt)
                     .addComponent(lblCurrentAverageArt))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblHighScoreTitleArt)
                     .addComponent(lblHighScoreArt))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblLowScoreTitleArt)
                     .addComponent(lblLowScoreArt))
                 .addContainerGap(50, Short.MAX_VALUE))
@@ -513,11 +519,11 @@ public class GradeUI extends javax.swing.JFrame {
                                     .addComponent(lblHistoryTitle, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                                    .addComponent(jTextField1)
-                                    .addComponent(jTextField2)
-                                    .addComponent(jTextField3)
-                                    .addComponent(jTextField4)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(txtFieldProg)
+                                    .addComponent(txtFieldArt)
+                                    .addComponent(txtFieldScience)
+                                    .addComponent(txtFieldMath)
+                                    .addComponent(txtFieldHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(71, 71, 71))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblEnterScore)
@@ -537,23 +543,23 @@ public class GradeUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblProgrammingTitle)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtFieldProg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblArtTitle)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtFieldArt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblScienceTitle)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtFieldScience, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblMathTitle)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtFieldMath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblHistoryTitle)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtFieldHistory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(panelProgramming, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -568,15 +574,76 @@ public class GradeUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Calculates the grades and updates the class tabs
+     * @param evt Mouse click
+     */
     private void btnCalculateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculateMouseClicked
-
         
+        Calculator gradeCalculator = new Calculator();
+        
+        try {
+            int progGrade = gradeCalculator.verifyGrade(txtFieldProg.getText());
+            int artGrade = gradeCalculator.verifyGrade(txtFieldArt.getText());
+            int scienceGrade = gradeCalculator.verifyGrade(txtFieldScience.getText());
+            int mathGrade = gradeCalculator.verifyGrade(txtFieldMath.getText());
+            int historyGrade = gradeCalculator.verifyGrade(txtFieldHistory.getText());
+            
+            progList.add(progGrade);
+            artList.add(artGrade);
+            scienceList.add(scienceGrade);
+            mathList.add(mathGrade);
+            historyList.add(historyGrade);
+        }
+        catch (NumberFormatException | Error e) {
+            JOptionPane.showMessageDialog(null, "Input Error: Please enter an integer between 0 and 100 (inclusive) into all the text fields.", "Input Error", JOptionPane.ERROR_MESSAGE);
+        }
+        
+        /* Sets the total number of grades */
+        lblNumberOfScoresArt.setText(Integer.toString(artList.size()));
+        lblNumberOfScoresProg.setText(Integer.toString(progList.size()));
+        lblNumberOfScoresMath.setText(Integer.toString(mathList.size()));
+        lblNumberOfScoresScience.setText(Integer.toString(scienceList.size()));
+        lblNumberOfScoresHistory.setText(Integer.toString(historyList.size()));
+        
+        /* Sets the grade averages */
+        lblCurrentAverageArt.setText(Integer.toString(gradeCalculator.calcAverage(artList)));
+        lblCurrentAverageProg.setText(Integer.toString(gradeCalculator.calcAverage(progList)));
+        lblCurrentAverageMath.setText(Integer.toString(gradeCalculator.calcAverage(mathList)));
+        lblCurrentAverageScience.setText(Integer.toString(gradeCalculator.calcAverage(scienceList)));
+        lblCurrentAverageHistory.setText(Integer.toString(gradeCalculator.calcAverage(historyList)));
+        
+        /* Sets the grade highs */
+        lblHighScoreArt.setText(Integer.toString(gradeCalculator.calcHigh(artList)));
+        lblHighScoreProg.setText(Integer.toString(gradeCalculator.calcHigh(progList)));
+        lblHighScoreMath.setText(Integer.toString(gradeCalculator.calcHigh(mathList)));
+        lblHighScoreScience.setText(Integer.toString(gradeCalculator.calcHigh(scienceList)));
+        lblHighScoreHistory.setText(Integer.toString(gradeCalculator.calcHigh(historyList)));
+        
+        /* Sets the grade lows */
+        lblLowScoreArt.setText(Integer.toString(gradeCalculator.calcLow(artList)));
+        lblLowScoreProg.setText(Integer.toString(gradeCalculator.calcLow(progList)));
+        lblLowScoreMath.setText(Integer.toString(gradeCalculator.calcLow(mathList)));
+        lblLowScoreScience.setText(Integer.toString(gradeCalculator.calcLow(scienceList)));
+        lblLowScoreHistory.setText(Integer.toString(gradeCalculator.calcLow(historyList)));
     }//GEN-LAST:event_btnCalculateMouseClicked
 
+    /**
+     * Clears the text fields
+     * @param evt Mouse Click
+     */
     private void btnClearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClearMouseClicked
-
+        txtFieldProg.setText("");
+        txtFieldArt.setText("");
+        txtFieldScience.setText("");
+        txtFieldMath.setText("");
+        txtFieldHistory.setText("");
     }//GEN-LAST:event_btnClearMouseClicked
 
+    /**
+     * Exits the Program
+     * @param evt Mouse click
+     */
     private void btnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseClicked
         System.exit(0);
     }//GEN-LAST:event_btnExitMouseClicked
@@ -621,11 +688,6 @@ public class GradeUI extends javax.swing.JFrame {
     private javax.swing.JButton btnClear;
     private javax.swing.JButton btnExit;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel lblArtTitle;
     private javax.swing.JLabel lblCurrentAverageArt;
     private javax.swing.JLabel lblCurrentAverageHistory;
@@ -678,5 +740,10 @@ public class GradeUI extends javax.swing.JFrame {
     private javax.swing.JPanel panelMath;
     private javax.swing.JTabbedPane panelProgramming;
     private javax.swing.JPanel panelScience;
+    private javax.swing.JTextField txtFieldArt;
+    private javax.swing.JTextField txtFieldHistory;
+    private javax.swing.JTextField txtFieldMath;
+    private javax.swing.JTextField txtFieldProg;
+    private javax.swing.JTextField txtFieldScience;
     // End of variables declaration//GEN-END:variables
 }

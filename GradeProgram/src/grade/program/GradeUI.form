@@ -48,11 +48,11 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="2" attributes="0">
-                                  <Component id="jTextField1" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="jTextField2" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="jTextField3" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="jTextField4" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="jTextField5" alignment="2" min="-2" pref="50" max="-2" attributes="0"/>
+                                  <Component id="txtFieldProg" alignment="2" max="32767" attributes="0"/>
+                                  <Component id="txtFieldArt" alignment="2" max="32767" attributes="0"/>
+                                  <Component id="txtFieldScience" alignment="2" max="32767" attributes="0"/>
+                                  <Component id="txtFieldMath" alignment="2" max="32767" attributes="0"/>
+                                  <Component id="txtFieldHistory" alignment="2" min="-2" pref="50" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -80,27 +80,27 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblProgrammingTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFieldProg" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblArtTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFieldArt" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblScienceTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFieldScience" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblMathTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFieldMath" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblHistoryTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFieldHistory" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="panelProgramming" alignment="1" min="-2" pref="211" max="-2" attributes="0"/>
@@ -173,15 +173,15 @@
         <Property name="text" type="java.lang.String" value="History"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txtFieldProg">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtFieldArt">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="txtFieldScience">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="txtFieldMath">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="txtFieldHistory">
     </Component>
     <Container class="javax.swing.JTabbedPane" name="panelProgramming">
       <Properties>
@@ -221,11 +221,11 @@
                           <Component id="lblLowScoreTitleArt" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="2" attributes="0">
-                          <Component id="lblNumberOfScoresArt" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblCurrentAverageArt" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblHighScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblLowScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblNumberOfScoresArt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCurrentAverageArt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHighScoreArt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLowScoreArt" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="106" max="32767" attributes="0"/>
                   </Group>
@@ -235,24 +235,24 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblNumberOfScoresTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblNumberOfScoresArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblNumberOfScoresTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNumberOfScoresArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblCurrentAverageTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblCurrentAverageArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblCurrentAverageTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCurrentAverageArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHighScoreTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblHighScoreArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblHighScoreTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHighScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblLowScoreTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblLowScoreArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblLowScoreTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLowScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="50" max="32767" attributes="0"/>
                   </Group>
