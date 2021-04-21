@@ -15,15 +15,15 @@ public class Calculator {
     
     public int verifyGrade(String Grade){
         int checkedInt = -1;
-        double checkedDouble;
+        float checkedFloat;
         
         try {
             if (Grade == null) {
                 Error nullNumber = new Error();
                 throw nullNumber;
             }
-            checkedDouble = Double.parseDouble(Grade);
-            checkedInt = (int) Math.round(checkedDouble);
+            checkedFloat = Float.parseFloat(Grade);
+            checkedInt = Math.round(checkedFloat);
             
             if (checkedInt < 0 || checkedInt > 100) {
                 Error negativeNumber = new Error();
@@ -40,13 +40,13 @@ public class Calculator {
     public int calcAverage(ArrayList list) {
         double classAverage;
         int classAverageInt;
-        double total = 0;
+        int total = (int) list.get(0);
         
         for (int i = 0; i < list.size() - 1; i++) {
-            total += (double) list.get(i);
+            total += (int) list.get(i);
         }
         
-        classAverage = total/ (double) list.size();
+        classAverage = (double) total/ (double) list.size();
         classAverageInt = (int) Math.round(classAverage);
         
         return classAverageInt;
@@ -55,9 +55,9 @@ public class Calculator {
     public int calcHigh(ArrayList list) {
         int highestGrade = 0;
         
-        highestGrade = (int) list.get(0);
-        for (int i = 0; i < list.size() - 1; i++) {
+        for (int i = 0; i < list.size(); i++) {
             if (highestGrade < (int) list.get(i)) {
+                System.out.println("YES");
                 highestGrade = (int) list.get(i);
             }
         }
@@ -68,8 +68,7 @@ public class Calculator {
     public int calcLow(ArrayList list) {
         int lowestGrade = 0;
         
-        lowestGrade = (int) list.get(0);
-        for (int i = 0; i < list.size() - 1; i++) {
+        for (int i = 0; i < list.size(); i++) {
             if (lowestGrade > (int) list.get(i)) {
                 lowestGrade = (int) list.get(i);
             }

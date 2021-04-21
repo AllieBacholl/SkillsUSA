@@ -221,11 +221,11 @@
                           <Component id="lblLowScoreTitleArt" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="2" attributes="0">
-                          <Component id="lblNumberOfScoresArt" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblCurrentAverageArt" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblHighScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblLowScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblNumberOfScoresArt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCurrentAverageArt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHighScoreArt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLowScoreArt" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="106" max="32767" attributes="0"/>
                   </Group>
@@ -235,24 +235,24 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblNumberOfScoresTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblNumberOfScoresArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblNumberOfScoresTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNumberOfScoresArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblCurrentAverageTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblCurrentAverageArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblCurrentAverageTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCurrentAverageArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHighScoreTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblHighScoreArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblHighScoreTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHighScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblLowScoreTitleArt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblLowScoreArt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="lblLowScoreTitleArt" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLowScoreArt" alignment="2" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="50" max="32767" attributes="0"/>
                   </Group>

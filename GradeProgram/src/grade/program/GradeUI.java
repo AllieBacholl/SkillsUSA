@@ -162,7 +162,7 @@ public class GradeUI extends javax.swing.JFrame {
                     .addComponent(lblHighScoreTitleArt, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblLowScoreTitleArt, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblNumberOfScoresArt)
                     .addComponent(lblCurrentAverageArt)
                     .addComponent(lblHighScoreArt)
@@ -173,19 +173,19 @@ public class GradeUI extends javax.swing.JFrame {
             panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelArtLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblNumberOfScoresTitleArt)
                     .addComponent(lblNumberOfScoresArt))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblCurrentAverageTitleArt)
                     .addComponent(lblCurrentAverageArt))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblHighScoreTitleArt)
                     .addComponent(lblHighScoreArt))
                 .addGap(18, 18, 18)
-                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelArtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblLowScoreTitleArt)
                     .addComponent(lblLowScoreArt))
                 .addContainerGap(50, Short.MAX_VALUE))
@@ -603,11 +603,33 @@ public class GradeUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Input Error: Please enter an integer between 0 and 100 (inclusive) into all the text fields.", "Input Error", JOptionPane.ERROR_MESSAGE);
         }
         
+        /* Sets the total number of grades */
         lblNumberOfScoresArt.setText(Integer.toString(artList.size()));
         lblNumberOfScoresProg.setText(Integer.toString(progList.size()));
         lblNumberOfScoresMath.setText(Integer.toString(mathList.size()));
         lblNumberOfScoresScience.setText(Integer.toString(scienceList.size()));
         lblNumberOfScoresHistory.setText(Integer.toString(historyList.size()));
+        
+        /* Sets the grade averages */
+        lblCurrentAverageArt.setText(Integer.toString(gradeCalculator.calcAverage(artList)));
+        lblCurrentAverageProg.setText(Integer.toString(gradeCalculator.calcAverage(progList)));
+        lblCurrentAverageMath.setText(Integer.toString(gradeCalculator.calcAverage(mathList)));
+        lblCurrentAverageScience.setText(Integer.toString(gradeCalculator.calcAverage(scienceList)));
+        lblCurrentAverageHistory.setText(Integer.toString(gradeCalculator.calcAverage(historyList)));
+        
+        /* Sets the grade highs */
+        lblHighScoreArt.setText(Integer.toString(gradeCalculator.calcHigh(artList)));
+        lblHighScoreProg.setText(Integer.toString(gradeCalculator.calcHigh(progList)));
+        lblHighScoreMath.setText(Integer.toString(gradeCalculator.calcHigh(mathList)));
+        lblHighScoreScience.setText(Integer.toString(gradeCalculator.calcHigh(scienceList)));
+        lblHighScoreHistory.setText(Integer.toString(gradeCalculator.calcHigh(historyList)));
+        
+        /* Sets the grade lows */
+        lblLowScoreArt.setText(Integer.toString(gradeCalculator.calcLow(artList)));
+        lblLowScoreProg.setText(Integer.toString(gradeCalculator.calcLow(progList)));
+        lblLowScoreMath.setText(Integer.toString(gradeCalculator.calcLow(mathList)));
+        lblLowScoreScience.setText(Integer.toString(gradeCalculator.calcLow(scienceList)));
+        lblLowScoreHistory.setText(Integer.toString(gradeCalculator.calcLow(historyList)));
     }//GEN-LAST:event_btnCalculateMouseClicked
 
     /**
