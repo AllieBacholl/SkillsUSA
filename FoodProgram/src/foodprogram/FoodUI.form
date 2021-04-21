@@ -24,28 +24,25 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="lblName" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="btnCalculate" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnClear" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="lblHotDogPrice" min="-2" max="-2" attributes="0"/>
                                           <Component id="lblBratPrice" min="-2" max="-2" attributes="0"/>
                                           <Component id="lblHamburgerPrice" min="-2" max="-2" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="btnCalculate" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="btnClear" min="-2" max="-2" attributes="0"/>
-                                          </Group>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -60,8 +57,8 @@
                                           <Component id="txtFieldHamburger" min="-2" pref="50" max="-2" attributes="0"/>
                                           <Component id="txtFieldHotDog" min="-2" pref="50" max="-2" attributes="0"/>
                                           <Component id="lblTotalHotDogsTitle" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblTotalBratsTitle" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="lblTotalHamburgersTitle" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblTotalBratsTitle" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -71,59 +68,72 @@
                                   <Component id="lblHotDogTotal" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblHamburgerTotal" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblWater" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFries" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSoda" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblWaterPrice" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFriesPrice" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSodaPrice" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtFieldSoda" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtFieldFries" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="txtFieldWater" min="-2" pref="50" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Component id="lblTotalFriesTitle" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblTotalWaterTitle" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="lblTotalSodasTitle" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblWaterTotal" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSodaTotal" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFriesTotal" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lblTitle" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="lblName" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
                               <Component id="lblPriceOfSaleTitle" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lblTotalPrice" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblWater" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblFries" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblSoda" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="lblWaterPrice" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblFriesPrice" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblSodaPrice" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="btnExit" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="lblTotalSalesTitle" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblTotalSales" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txtFieldSoda" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtFieldFries" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="txtFieldWater" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                              <Component id="lblTotalFriesTitle" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblTotalWaterTitle" min="-2" max="-2" attributes="0"/>
-                                              <Component id="btnExit" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Component id="lblTotalSodasTitle" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="lblWaterTotal" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblSodaTotal" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblFriesTotal" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="lblTotalSalesTitle" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="lblTotalSales" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -147,7 +157,7 @@
                           <Component id="lblPriceOfSaleTitle" alignment="3" max="32767" attributes="0"/>
                           <Component id="lblTotalPrice" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="2" attributes="0">
@@ -169,7 +179,11 @@
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Component id="lblBratPrice" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblBratPrice" alignment="3" max="32767" attributes="0"/>
+                                  <Component id="lblTotalBratsTitle" alignment="3" max="32767" attributes="0"/>
+                                  <Component id="lblBratTotal" alignment="3" max="32767" attributes="0"/>
+                              </Group>
                               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="2" attributes="0">
                                   <Component id="lblHamburger" alignment="2" max="32767" attributes="0"/>
@@ -180,28 +194,20 @@
                               </Group>
                               <EmptySpace min="-2" max="-2" attributes="0"/>
                               <Component id="lblHamburgerPrice" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="btnCalculate" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnClear" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblBratTotal" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                      <Component id="lblHamburgerTotal" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblTotalBratsTitle" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                      <Component id="lblTotalHamburgersTitle" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+                              <Component id="lblHamburgerTotal" max="32767" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+                              <Component id="lblTotalHamburgersTitle" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnCalculate" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnClear" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
